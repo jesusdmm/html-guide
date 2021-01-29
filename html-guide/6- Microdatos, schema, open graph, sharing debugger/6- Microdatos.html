@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!---------------------------------------------MICRODATOS---------------------------------------------->
+
+  <!--Microdatos sirven para indicarle al buscador que cosa es cada elemento.
+  Es un tema amplio: Schema.org, Open Graph, Sharing Debugger.-->
+  <div itemscope itemtype ="http://schema.org/Movie">
+    <h1 itemprop="name">Avatar</h1>
+    <span>Director: <span itemprop="director">James Cameron</span> (born August 16, 1954)</span>
+    <span itemprop="genre">Science fiction</span>
+    <a href="../movies/avatar-theatrical-trailer.html" itemprop="trailer">Trailer</a>
+  </div>
+
+  <article itemscope itemtype="http://schema.org/Blog">
+    <h2>Curso de HTML</h2>
+    <p>bla bla bla bla bla bla......</p>
+    <footer>  
+      <p itemprop="author">Jesus Marcano</p>
+    </footer>
+  </article>
+
+  <!-- Ejemplo de Open Graph -->
+
+  <meta property="og:title" content="The Rock" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+  <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+<!------------------------------------------------------------------------------------------------------>
+</body>
+</html>

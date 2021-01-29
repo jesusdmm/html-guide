@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form>
+
+        <fieldset>
+            <legend>Tus datos personales</legend>
+                <div>
+            <!-- <label>
+                ingresa tu nombre de usuario
+                <input id="username" name="username">
+            </label> -->
+                    <input name="username" placeholder="Ingrese su nombre de usuario" required>
+                </div>
+                <div>
+                    <label>
+                        ingrese su contraseña
+                        <input type="password" id="password" name="password" required>
+                    </label>
+                </div>
+         </fieldset>
+
+         <fieldset>
+             <legend>Tu correo</legend>
+                <div>
+                    <label>
+                        ingrese su email    
+                        <input type="email" id="email" name="email" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        ingrese su fecha de nacimiento    
+                        <input type="date" id="date" name="date" required>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        ingrese un numero  
+                        <input type="number" value="58" readonly>
+                    </label>
+                </div>
+                <input type="submit" value="Iniciar sesion">
+         </fieldset>
+
+         <fieldset>
+             <legend>Tus pasatiempos</legend>
+                <label>Deportes
+                    <input type="checkbox">
+                </label>
+                <label>Juegos
+                    <input type="checkbox">
+                </label>
+                <label>Cocinar
+                    <input type="checkbox">
+                </label>
+                <label>Leer
+                    <input type="checkbox">
+                </label>
+         </fieldset>
+
+         <fieldset>
+             <legend>Tu genero</legend>
+                <label>Hombre
+                    <input type="radio" name="radio">
+                </label>
+                <label>Mujer
+                    <input type="radio" name="radio">
+                </label>
+                <label>Prefiero no definirlo
+                    <input type="radio" name="radio">
+                </label>
+         </fieldset>
+
+         <fieldset>
+             <label>Select y opciones</label>
+             <label for="country">Escoje tu pais</label>
+             <select name="country" id="country">
+                <optgroup label="America">
+                    <option value="pe">Peru</option>
+                    <option value="co">Colombia</option>
+                    <option value="ve">Venezuela</option>
+                </optgroup>
+                <optgroup label="Europa">
+                    <option value="uk">Reino Unido</option>
+                    <option value="es">España</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        
+        <textarea name="mensaje" id="#" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                
+    </form>
+
+    <script>
+        document.getElementById("password")
+        .addEventListener("keyup", e => {
+        console.log(e.target.value)
+        })
+    </script>
+</body>
+</html>
+
+<!-- En los formularios, todos los campos deben tener un atributo name,
+es un identificador unico de ese campo. sirve para indicarle al backend
+que es cada dato que se esta enviando -->

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactividad</title>
+</head>
+<body>
+
+    <dialog id="modal">
+        <h2>Curso html desde cero</h2>
+        <p>Precio</p>
+        <button id="cerrar">Cerrar modal</button>
+    </dialog>
+    
+    <button id="button">Abrir modal</button>
+
+    <h1>Contenido interactivo</h1>
+
+    <details>
+        <summary>HTML</summary>
+        <p>Lenguajes</p>
+        <p>elementos</p>
+    </details>
+
+    <h1>Contenido embebido</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/X1uaOtiJ9Vc" 
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+
+    <script>
+        const modal = document.getElementById("modal");
+        const button = document.getElementById("button");
+        const cerrar = document.getElementById("cerrar");
+
+        button.addEventListener("click", ()=> {
+        modal.setAttribute("open", true)
+        })
+
+        cerrar.addEventListener("click", ()=> {
+        modal.removeAttribute("open", true)
+        })
+    </script>
+</body>
+</html>

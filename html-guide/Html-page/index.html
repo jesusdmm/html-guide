@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!------------------------------------------------HEAD------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+
+    <!-- la funcion de este meta es que la pag cargue con un tamaño estandar en cualquier dispositivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- este es para escribir la descripcion de la pag que se ve en google-->
+    <meta name="description" content="Primera pagina web con EDteam">
+
+    <title>Titulo de la pagina</title>
+
+    <!-- se trae archivo css al codigo-->
+    <link ref="stylesheet" href="styles.css">
+
+    <!-- se añade el icono que sale en el titulo de pagina en el explorer-->
+    <link rel="shorcut icon" href="./pngclases/cerdo.png">
+</head>
+<!------------------------------------------------------------------------------------------------------>
+
+<body>
+
+<!---------------------------LOGOTIPO DE LA PAGINA---------------------------->
+<!--Se crea el logotipo de la pagina-->
+  <header>
+      <img src="./pngclases/vaca.png">
+  </header>
+<!---------------------------------------------------------------------------->
+
+<!--------------------------ENCABEZADOS------------------------------->
+  <h1>Encabezado 1</h1> 
+  <h2>Encabezado 2</h2> 
+  <h3>Encabezado 3</h3> 
+  <h4>Encabezado 4</h4> 
+  <h5>Encabezado 5</h5> 
+  <h6>Encabezado 6</h6> 
+
+  <article>
+    <!-- Los H son titulos y subtitulos. el titulo mas grande es el h1
+    y el h2 es su subtitulo, h3 seria subtitulo de h2 -->
+    <h1>Bienvenido a mi sitio web</h1>
+    <p>Primera pagina web hecha con html</p>
+    <section>
+        <h2>jijiji</h2>
+    </section>
+  </article>
+<!-------------------------------------------------------------------->
+
+  <nav>
+      <!-- navegacion son enlaces. los enlaces son etiquetas "a"
+          que dentro del atributo href indican el destino al que va a apuntar ese enlace.
+      el # es un adorno -->
+      <a href="inicio.html">Inicio</a>
+      <a href="contacto.html">Contacto</a>
+  </nav>
+
+
+<!----------------------LISTAS------------------------------------------------->
+
+<!--las listas sirven para enumerar. lista de tareas por ejemplo.
+    las listas tienen elemenos ul (unordenedlist) y elemenos ol (ordenedlist)
+    li es list item.
+    una lista es un conjunto de elementos que estan relacionados.-->
+
+    <ul>
+      <li>Item de lista 1</li>
+      <li>Item de lista 2
+        <ol>
+          <li>Subitem de lista 1</li>
+          <li>Subitem de lista 2</li>
+        </ol>
+      </li>
+      <li>Item de lista 3</li>
+    </ul>
+  
+  <!-- lista de definicion. sirven para indicar un termino y una definicion
+  por ejemplo un glosario -->
+  <dl>
+    <dt>Peru</dt>
+    <dd>Lima</dd>
+    <dt>Colombia</dt>
+    <dd>Bogota</dd>
+    <dt>Bolivia</dt>
+    <dd>La Paz</dd>
+  </dl>
+  
+  <!-- la etiqueta figure permite colocar un contenido relacionado que rompe con el
+  flujo, es algo parecido a el aside. figcaption es una Descripcion del contenido
+  del figure. code le indica al navegador que lo que escribes es un codigo-->
+  <figure>
+    <pre>
+      <code>
+          function hola()
+          {
+            return "hola"
+          }
+      </code>
+    </pre>
+    <figcaption>
+      Declaracion de una funcion en javascript
+    </figcaption>
+  </figure>
+
+  <!-- main es eel elemento mas importante en un pagina web. es donde se coloca todo
+    el contenido principal de la pagina. hr coloca una linea que significa cambio
+    de seccion. pre significa preformateado, quiere decir que el navegador va a
+    tomar el contenido tal cual como esta escrito en el html. blockquote se usa
+    para citas o resaltar algun elemento del contenido. -->
+  <main>
+    <p>Este es un parrafo, es decir un bloque de texto</p>
+    <hr>
+    <pre>
+      Este texto
+        se reprersentara igual
+    en el navegador
+    </pre>
+    <blockquote>
+        Use blockquote para destacar citas
+    </blockquote>
+  </main>
+
+<!---------------------------------------------------------------------------------------->
+
+<!-----------------------------DIV--------------------------------------->
+
+<!-- elemento div no tiene un significado. son solo contenedores -->
+<div class="user">
+  <div class="user_name">
+    <p>Ejemplo</p>
+  </div>
+  <div class="user_image">
+    <img src="#" alt="foto de ejemplo">
+  </div>
+</div>
+<!------------------------------------------------------------------------>
+
+<!--------------------------------ELEMENTOS DE LINEA Y DE BLOQUE----------------------------------->
+
+<!-- Un parrafo es un elemento de bloque porque cada etiqueta P se escribe debajo de
+la anterior. la etiqueta span es un elemento de linea porque cada etiqueta se escribe 
+una al lado de la otra en el navegador. LOS ELEMENTOS DE LINEA DEBEN ESTAR DENTRO DE
+ELEMENTOS DE BLOQUE -->
+<p>  Elemento de bloque
+
+  <span>Elementos de linea(es como el div pero para texto)</span>
+  <small></small>
+  <strong>Texto que es mas importante</strong>
+  <em>Texto con enfasis en cursiva</em>
+  <cite>Para citar</cite>
+  <dfn>Para definir algo</dfn>
+  <code>Para escribir codigo</code>
+  <data>Para poner datos que vengan de algun programa</data>
+  <br><!--Para saltos de linea (breaking rule)-->
+  <q>citas (quotes)</q>
+  <abbr></abbr>
+  <del>Un texto ha sido eliminado</del>
+  <wbr><!--Cuando no hay suficiente espacio en la pantalla para la palabra
+    saltar a la siguiente linea(word break)-->
+  <sup>superindice(aparece como un numero de una formula quimica)</sup>
+  <sub>subindice(aparece como un exponente)</sub>
+  <time>Para horas o fechas</time>
+  <mark>Para resaltar</mark>
+  <a href="#">Enlaces</a>
+
+    <!--------------------------ENLACES------------------------------>
+  <nav>
+    <!-- Ruta absoluta -->
+    <a href="https://ed.team"></a>
+    <!-- Ruta relativa, misma carpeta -->
+    <a href="usuarios.html"></a>
+    <a href="./usuarios.html"></a>
+    <!-- Ruta relativa, carpeta superior -->
+    <a href="../usuario.html"></a>
+    <!-- Ruta relativa, dos carpetas arriba y subcarpeta -->
+    <a href="../../usuarios/usuarios.html"></a>
+    <!-- Ruta relativa a la raiz -->
+    <a href="/usuario.html"></a>
+  </nav>
+
+  <i></i>
+  <b></b>
+  <u></u>
+
+  </p>
+<!------------------------------------------------------------------->
+
+<!----------------------------------MARCADORES------------------------------------>
+
+  <!--Son enlaces dentro de la misma pagina. Se les coloca un # que 
+  es el destino junto con un texto, ese texto debe cioncidir con un id dentro 
+  de la pagina -->
+  <ul>
+    <li><a href="#infancia ">Infancia</a></li>
+    <li><a href="#juventud">Juventud</a></li>
+    <li><a href="#exito">Exito</a></li>
+  </ul>
+  
+  <h2 id="Infancia">Infancia</h2>
+  <h2 id="Juventud">Juventud</h2>
+  <h2 id="exito">Exito</h2>
+<!----------------------------------------------------------------------------------->
+      
+
+<!---------------------------------IMAGENES------------------------------------>
+
+<!--Las imagenes png permiten transparencia, son buenos para color plano y para graficos con texto.
+jpg es exclusivo para fotografia. los vectores son buenos para logotipos-->
+  <img src="./pngclases/cajero.gif"><br>
+  <img srcset="vaca.png 1.5x, cerdo.png 2x">
+<!----------------------------------------------------------------------------->
+
+
+<!---------------------------------------------MICRODATOS---------------------------------------------->
+
+  <!--Microdatos sirven para indicarle al buscador que cosa es cada elemento.
+  Es un tema amplio: Schema.org, Open Graph, Sharing Debugger.-->
+  <div itemscope itemtype ="http://schema.org/Movie">
+    <h1 itemprop="name">Avatar</h1>
+    <span>Director: <span itemprop="director">James Cameron</span> (born August 16, 1954)</span>
+    <span itemprop="genre">Science fiction</span>
+    <a href="../movies/avatar-theatrical-trailer.html" itemprop="trailer">Trailer</a>
+  </div>
+
+  <article itemscope itemtype="http://schema.org/Blog">
+    <h2>Curso de HTML</h2>
+    <p>bla bla bla bla bla bla......</p>
+    <footer>  
+      <p itemprop="author">Jesus Marcano</p>
+    </footer>
+  </article>
+
+  <!-- Ejemplo de Open Graph -->
+
+  <meta property="og:title" content="The Rock" />
+  <meta property="og:type" content="video.movie" />
+  <meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+  <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
+<!------------------------------------------------------------------------------------------------------>
+
+      <!-- TABLAS.  se utilizan para estructurar contenido, no para diseño -->
+
+      <table>
+        <caption>Mi horario de clases</caption>
+        <tbody>
+          <thead> 
+            <tr>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+          </thead>  
+        
+          <tr>
+            <td rowspan="2">HTML</td>
+            <td>PHP</td>
+            <td rowspan="2">javascript</td>
+            <td>Python</td>
+            <td>CSS</td>
+          </tr>
+          <tr>
+            <td>Go</td>
+            <td>Big Data</td>
+            <td>Diseño</td>
+          </tr>
+          <tr>
+            <td colspan="5">Recreo</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>SQL</td>
+            <td>Algoritmos</td>
+            <td>Angular</td>
+            <td>PWA</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>1 credito</td>
+            <td>1 credito</td>
+            <td>1 credito</td>
+            <td>1 credito</td>
+            <td>1 credito</td>
+          </tr>
+        </tfoot>
+      </table>
+
+  <!-- Formularios -->
+
+      
+      
+<footer>pie de pagina</footer>
+<aside>aca se coloca algo que no esta relacionado con el contenido</aside>
+
+</body>
+</html>
+
+<!-- la manera de comentar en vs ees con ctrl + k + c -->

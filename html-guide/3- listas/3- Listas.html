@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!----------------------LISTAS------------------------------------------------->
+
+<!--las listas sirven para enumerar. lista de tareas por ejemplo.
+    las listas tienen elemenos ul (unordenedlist, sin numero) y elemenos ol (ordenedlist, con numero)
+    li es list item.
+    una lista es un conjunto de elementos que estan relacionados.-->
+
+    <ul>
+        <li>Item de lista 1</li>
+        <li>Item de lista 2
+          <ol>
+            <li>Subitem de lista 1</li>
+            <li>Subitem de lista 2</li>
+          </ol>
+        </li>
+        <li>Item de lista 3</li>
+    </ul>
+    
+    <!-- lista de definicion. sirven para indicar un termino y una definicion
+    por ejemplo un glosario -->
+    <dl>
+      <dt>Peru</dt>
+      <dd>Lima</dd>
+      <dt>Colombia</dt>
+      <dd>Bogota</dd>
+      <dt>Bolivia</dt>
+      <dd>La Paz</dd>
+    </dl>
+    
+    <!-- la etiqueta figure permite colocar un contenido relacionado que rompe con el
+    flujo, es algo parecido a el aside. figcaption es una Descripcion del contenido
+    del figure. code le indica al navegador que lo que escribes es un codigo-->
+    <figure>
+      <pre>
+        <code>
+            function hola()
+            {
+              return "hola"
+            }
+        </code>
+      </pre>
+      <figcaption>
+        Declaracion de una funcion en javascript
+      </figcaption>
+    </figure>
+  
+    <!-- main es eel elemento mas importante en un pagina web. es donde se coloca todo
+      el contenido principal de la pagina. hr coloca una linea que significa cambio
+      de seccion. pre significa preformateado, quiere decir que el navegador va a
+      tomar el contenido tal cual como esta escrito en el html. blockquote se usa
+      para citas o resaltar algun elemento del contenido. -->
+    <main>
+      <p>Este es un parrafo, es decir un bloque de texto</p>
+      <hr>
+      <pre>
+        Este texto
+          se reprersentara igual
+      en el navegador
+      </pre>
+      <blockquote>
+          Use blockquote para destacar citas
+      </blockquote>
+    </main>
+  
+  <!---------------------------------------------------------------------------------------->
+</body>
+</html>
